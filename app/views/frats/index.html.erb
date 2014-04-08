@@ -1,0 +1,29 @@
+<h1>Listing frats</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Id</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @frats.each do |frat| %>
+      <tr>
+        <td><%= frat.name %></td>
+        <td><%= frat.id %></td>
+        <td><%= link_to 'Show', frat %></td>
+        <td><%= link_to 'Edit', edit_frat_path(frat) %></td>
+        <td><%= link_to 'Destroy', frat, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Frat', new_frat_path %>

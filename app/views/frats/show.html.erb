@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @frat.name %>
+</p>
+
+<p>
+  <strong>Id:</strong>
+  <%= @frat.id %>
+</p>
+
+<%= link_to 'Edit', edit_frat_path(@frat) %> |
+<%= link_to 'Back', frats_path %>

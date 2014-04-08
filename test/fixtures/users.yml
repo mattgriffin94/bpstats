@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  password: MyString
+  frat_id: 1
+  games: 1
+  wins: 1
+  sinks: 1
+
+two:
+  name: MyString
+  password: MyString
+  frat_id: 1
+  games: 1
+  wins: 1
+  sinks: 1
